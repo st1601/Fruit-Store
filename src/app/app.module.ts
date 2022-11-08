@@ -18,6 +18,7 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { ContactComponent } from './components/contact/contact.component';
 import { CartComponent } from './components/cart/cart.component';
 import { AboutComponent } from './components/about/about.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AboutComponent } from './components/about/about.component';
     ContactComponent,
     CartComponent,
     AboutComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,6 +58,10 @@ import { AboutComponent } from './components/about/about.component';
       {
         path: 'login',
         component: LoginComponent,
+      },
+      {
+        path: 'checkout',
+        component: CheckoutComponent,
       },
       {
         path: 'products',
