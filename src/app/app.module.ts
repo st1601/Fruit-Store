@@ -60,6 +60,13 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
         component: LoginComponent,
       },
       {
+<<<<<<< HEAD
+=======
+        path: 'checkout',
+        component: CheckoutComponent,
+      },
+      {
+>>>>>>> 4cee5b44b2345eca80a54cf4ae5da27dd194dc72
         path: 'products',
         component: ProductComponent,
       },
