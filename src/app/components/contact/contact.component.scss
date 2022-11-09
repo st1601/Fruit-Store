@@ -42,6 +42,10 @@ h2{
 }
 
 .contact-form{
+    width: 47.5%;
+    border-radius: 5px 5px;
+}
+.contact-form-a{
     border-radius: 5px 5px;
 }
 
@@ -62,7 +66,7 @@ button[type="submit"]{
 }
 input {
     &[type=text], &[type=tel], &[type=email] {
-      width: 49%;
+
       padding: 15px;
       border: 1px solid #ddd;
       border-radius: 3px;
@@ -111,6 +115,7 @@ textarea {
 
 .find-location{
     background-color: #162133;
+    padding: 0 !important;
 }
 .find-location p{
     color: #fff;
@@ -121,7 +126,6 @@ textarea {
 }
 .find-location p i{
     color: #F28123;
-    margin-right: 10px;
 }
 .container{
     margin-bottom: 150px;
@@ -139,8 +143,24 @@ form{
     letter-spacing: 0.1px;
     line-height: 1.8;
     color: #051922;
-    margin: 0 0 1.25rem 0;
+    width: 100%;
+    display: flex;
+    gap: 5%;
+   
 }
-.mr-10{
-    margin-left: 11px;
+
+.a{
+    margin-left: 5px;
+}
+.b{
+    margin-right: 5px;
+}
+@media screen and (max-device-width:611px) {
+    .fruit-form{
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+    .contact-form{
+        width: 100% !important;
+    }
 }
