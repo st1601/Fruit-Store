@@ -80,6 +80,10 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
         component: NewComponent,
       },
       {
+        path: 'checkout',
+        component: CheckoutComponent,
+      },
+      {
         path: 'product/:id',
         component: ProductDetailComponent,
       },
