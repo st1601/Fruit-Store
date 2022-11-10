@@ -4,7 +4,7 @@
     <img
       src="../../../assets/img/hero-bg.jpg"
       alt="first slide"
-      style="display: block; height: 30%; width: 100%"
+      class="slider-img"
     />
     <div class="carousel-caption">
       <div class="single-homepage-slider homepage-bg-1">
@@ -42,7 +42,7 @@
       <img
         src="../../../assets/img/hero-bg-2.jpg"
         alt="Random second slide"
-        style="display: block; height: 30%; width: 100%"
+        class="slider-img"
       />
     </div>
     <div class="carousel-caption">
@@ -80,7 +80,7 @@
     <img
       src="../../../assets/img/hero-bg-3.jpg"
       alt="third slide"
-      style="display: block; height: 30%; width: 100%"
+      class="slider-img"
     />
     <div class="carousel-caption">
       <div class="single-homepage-slider homepage-bg-3">
@@ -115,13 +115,13 @@
   </ng-template>
 </ngb-carousel>
 <!-- Support -->
-<div class="list-section pt-80 pb-80">
+<div class="list-section" style="padding-top: 50px; padding-bottom: 50px">
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
         <div class="list-box d-flex align-items-center">
           <div class="list-icon">
-            <i class="bi bi-truck"></i>
+            <i class="bi bi-truck" style="color: orange; font-size: 40px"></i>
           </div>
           <div class="content">
             <h3>Free Shipping</h3>
@@ -132,7 +132,10 @@
       <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
         <div class="list-box d-flex align-items-center">
           <div class="list-icon">
-            <i class="bi bi-telephone"></i>
+            <i
+              class="bi bi-telephone"
+              style="color: orange; font-size: 40px"
+            ></i>
           </div>
           <div class="content">
             <h3>24/7 Support</h3>
@@ -143,7 +146,10 @@
       <div class="col-lg-4 col-md-6">
         <div class="list-box d-flex justify-content-start align-items-center">
           <div class="list-icon">
-            <i class="bi bi-arrow-repeat"></i>
+            <i
+              class="bi bi-arrow-repeat"
+              style="color: orange; font-size: 40px"
+            ></i>
           </div>
           <div class="content">
             <h3>Refund</h3>
@@ -155,12 +161,12 @@
   </div>
 </div>
 <!-- Product -->
-<div class="product-section mt-150 mb-150">
+<div class="more-products" style="margin-top: 100px">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 offset-lg-2 text-center">
         <div class="section-title">
-          <h3><span class="orange-text">Our</span> Products</h3>
+          <h3><span style="color: orange">Our</span> Products</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
             fuga quas itaque eveniet beatae optio.
@@ -168,39 +174,48 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 text-center">
+    <div
+      class="row product-lists"
+      style="margin-top: 100px; margin-bottom: 100px"
+    >
+      <div class="col-lg-4 col-md-6 text-center berry">
         <div class="single-product-item">
           <div class="product-image">
-            <a><img src="assets/img/products/product-img-1.jpg" alt="" /></a>
+            <a href="single-product.html"
+              ><img src="assets/img/products/product-img-1.jpg" alt=""
+            /></a>
           </div>
           <h3>Strawberry</h3>
-          <p class="product-price"><span>Per Kg</span> 85$</p>
-          <a [routerLink]="['/cart']" routerLinkActive="active" class="cart-btn"
+          <p class="product-price"><span>Per Kg</span> 70$</p>
+          <a href="cart.html" class="cart-btn"
             ><i class="fas fa-shopping-cart"></i> Add to Cart</a
           >
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 text-center">
+      <div class="col-lg-4 col-md-6 text-center berry">
         <div class="single-product-item">
           <div class="product-image">
-            <a><img src="assets/img/products/product-img-2.jpg" alt="" /></a>
+            <a href="single-product.html"
+              ><img src="assets/img/products/product-img-2.jpg" alt=""
+            /></a>
           </div>
           <h3>Berry</h3>
           <p class="product-price"><span>Per Kg</span> 70$</p>
-          <a [routerLink]="['/cart']" routerLinkActive="active" class="cart-btn"
+          <a href="cart.html" class="cart-btn"
             ><i class="fas fa-shopping-cart"></i> Add to Cart</a
           >
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
+      <div class="col-lg-4 col-md-6 text-center lemon">
         <div class="single-product-item">
           <div class="product-image">
-            <a><img src="assets/img/products/product-img-3.jpg" alt="" /></a>
+            <a href="single-product.html"
+              ><img src="assets/img/products/product-img-3.jpg" alt=""
+            /></a>
           </div>
           <h3>Lemon</h3>
           <p class="product-price"><span>Per Kg</span> 35$</p>
-          <a [routerLink]="['/cart']" routerLinkActive="active" class="cart-btn"
+          <a href="cart.html" class="cart-btn"
             ><i class="fas fa-shopping-cart"></i> Add to Cart</a
           >
         </div>
@@ -222,7 +237,7 @@
               </span>
             </div>
           </div>
-          <img src="assets/img/a.jpg" alt="" />
+          <img src="assets/img/a.jpg" alt="" style="width: 100%" />
         </div>
       </div>
       <div class="content-column col-lg-6">
@@ -261,7 +276,7 @@
 </section>
 
 <!-- User -->
-<ngb-carousel class="center client-avater">
+<!-- <ngb-carousel class="center client-avater" style="padding-top: 100px">
   <ng-template ngbSlide>
     <div class="picsum-img-wrapper">
       <img src="../../../assets/Quan.jpg" />
@@ -316,9 +331,9 @@
       </p>
     </div>
   </ng-template>
-</ngb-carousel>
+</ngb-carousel> -->
 <!-- About -->
-<div class="abt-section mb-150">
+<div class="abt-section" style="margin-top: 150px; margin-bottom: 150px">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-12">
@@ -326,7 +341,10 @@
           <a
             href="https://youtu.be/cIQNea_Jxjg"
             class="video-play-btn popup-youtube"
-            ><i class="fas fa-play"></i
+            ><i
+              class="fas fa-play"
+              style="color: lightgray; font-size: 40px"
+            ></i
           ></a>
         </div>
       </div>
@@ -345,12 +363,6 @@
             facilis illo repellat veritatis minus, et labore minima mollitia qui
             ducimus.
           </p>
-          <a
-            [routerLink]="['/about']"
-            routerLinkActive="active"
-            class="nav-link boxed-btn mt-4"
-            >know more</a
-          >
         </div>
       </div>
     </div>
@@ -378,12 +390,12 @@
   </div>
 </section>
 <!-- New -->
-<div class="latest-news pt-150 pb-150">
+<div class="more-products" style="margin-top: 100px">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 offset-lg-2 text-center">
         <div class="section-title">
-          <h3><span class="orange-text">Our</span> News</h3>
+          <h3><span style="color: orange">Our</span> News</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
             fuga quas itaque eveniet beatae optio.
@@ -391,82 +403,92 @@
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="single-latest-news">
-          <a><div class="latest-news-bg news-bg-1"></div></a>
-          <div class="news-text-box">
-            <h3><a>You will vainly look for fruit on it in autumn.</a></h3>
-            <p class="blog-meta">
-              <span class="author"><i class="fas fa-user"></i> Admin</span>
-              <span class="date"
-                ><i class="fas fa-calendar"></i> 27 December, 2019</span
-              >
-            </p>
-            <p class="excerpt">
-              Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus
-              nisi. Praesent vitae mattis nunc, egestas viverra eros.
-            </p>
-            <a class="read-more-btn"
-              >read more <i class="fas fa-angle-right"></i
-            ></a>
+    <div class="latest-news" style="margin-top: 100px; margin-bottom: 100px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="single-latest-news">
+              <a href="single-news.html"
+                ><div class="latest-news-bg news-bg-1"></div
+              ></a>
+              <div class="news-text-box">
+                <h3>
+                  <a href="single-news.html"
+                    >You will vainly look for fruit on it in autumn.</a
+                  >
+                </h3>
+                <p class="blog-meta">
+                  <span class="author"
+                    ><i class="bi bi-person-circle"></i> Admin</span
+                  >
+                  <span class="date"
+                    ><i class="bi bi-calendar"></i> 27 December, 2019</span
+                  >
+                </p>
+                <p class="excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus laborum autem, dolores inventore, beatae nam.
+                </p>
+                <button class="btn btn-primary">Read more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-latest-news">
+              <a href="single-news.html"
+                ><div class="latest-news-bg news-bg-2"></div
+              ></a>
+              <div class="news-text-box">
+                <h3>
+                  <a href="single-news.html"
+                    >A man's worth has its season, like tomato.</a
+                  >
+                </h3>
+                <p class="blog-meta">
+                  <span class="author"
+                    ><i class="bi bi-person-circle"></i> Admin</span
+                  >
+                  <span class="date"
+                    ><i class="bi bi-calendar"></i> 27 December, 2019</span
+                  >
+                </p>
+                <p class="excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus laborum autem, dolores inventore, beatae nam.
+                </p>
+                <button class="btn btn-primary">Read more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-latest-news">
+              <a href="single-news.html"
+                ><div class="latest-news-bg news-bg-3"></div
+              ></a>
+              <div class="news-text-box">
+                <h3>
+                  <a href="single-news.html"
+                    >Good thoughts bear good fresh juicy fruit.</a
+                  >
+                </h3>
+                <p class="blog-meta">
+                  <span class="author"
+                    ><i class="bi bi-person-circle"></i> Admin</span
+                  >
+                  <span class="date"
+                    ><i class="bi bi-calendar"></i> 27 December, 2019</span
+                  >
+                </p>
+                <p class="excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus laborum autem, dolores inventore, beatae nam.
+                </p>
+                <button class="btn btn-primary">Read more</button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single-latest-news">
-          <a><div class="latest-news-bg news-bg-2"></div></a>
-          <div class="news-text-box">
-            <h3><a>A man's worth has its season, like tomato.</a></h3>
-            <p class="blog-meta">
-              <span class="author"><i class="fas fa-user"></i> Admin</span>
-              <span class="date"
-                ><i class="fas fa-calendar"></i> 27 December, 2019</span
-              >
-            </p>
-            <p class="excerpt">
-              Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus
-              nisi. Praesent vitae mattis nunc, egestas viverra eros.
-            </p>
-            <a class="read-more-btn"
-              >read more <i class="fas fa-angle-right"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-        <div class="single-latest-news">
-          <a><div class="latest-news-bg news-bg-3"></div></a>
-          <div class="news-text-box">
-            <h3><a>Good thoughts bear good fresh juicy fruit.</a></h3>
-            <p class="blog-meta">
-              <span class="author"><i class="fas fa-user"></i> Admin</span>
-              <span class="date"
-                ><i class="fas fa-calendar"></i> 27 December, 2019</span
-              >
-            </p>
-            <p class="excerpt">
-              Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus
-              nisi. Praesent vitae mattis nunc, egestas viverra eros.
-            </p>
-            <a class="read-more-btn"
-              >read more <i class="fas fa-angle-right"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <a
-          [routerLink]="['/new']"
-          routerLinkActive="active"
-          class="nav-link boxed-btn"
-          >More News</a
-        >
       </div>
     </div>
   </div>
 </div>
-<div></div>
