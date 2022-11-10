@@ -1,4 +1,4 @@
-<div class="top-header-area" id="sticker">
+<!-- <div class="top-header-area" id="sticker">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-sm-12 text-center">
@@ -90,4 +90,123 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+<div class="top-header-area" id="sticker">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-sm-12 text-center">
+        <div class="main-menu-wrap">
+          <!-- logo -->
+          <div class="site-logo">
+            <a class="navbar-brand col-3" routerLink="/">
+              <img src="assets/img/lol.png" alt="" style="width: 150px" />
+            </a>
+          </div>
+          <!-- logo -->
+
+          <!-- menu start -->
+          <nav class="main-menu">
+            <ul>
+              <li class="current-list-item">
+                <a
+                  class="nav-link"
+                  [routerLink]="['/home']"
+                  routerLinkActive="active"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  [routerLink]="['/about']"
+                  routerLinkActive="active"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  [routerLink]="['/new']"
+                  routerLinkActive="active"
+                  >News</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  [routerLink]="['/contact']"
+                  routerLinkActive="active"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  [routerLink]="['/products']"
+                  routerLinkActive="active"
+                  >Product</a
+                >
+              </li>
+              <li>
+                <div class="header-icons d-inline-block">
+                  <div
+                    class="nav-link shopping-cart"
+                    [routerLink]="['/cart']"
+                    routerLinkActive="active"
+                  >
+                    <i class="bi bi-basket"></i>
+                  </div>
+                  <div class="mobile-hide search-bar-icon" href="#">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div ngbDropdown class="d-inline-block">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary"
+                        id="dropdownBasic1"
+                        ngbDropdownToggle
+                      >
+                        <i class="bi bi-person-circle"></i>
+                      </button>
+                      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                        <button ngbDropdownItem>Action - 1</button>
+                        <button ngbDropdownItem>Another Action</button>
+                        <button ngbDropdownItem>Something else is here</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+          <div class="mobile-menu"></div>
+          <!-- menu end -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+<!-- end header -->
+
+	<!-- search area -->
+	<!-- <div class="search-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<span class="close-btn"><i class="fas fa-window-close"></i></span>
+					<div class="search-bar">
+						<div class="search-bar-tablecell">
+							<h3>Search For:</h3>
+							<input type="text" placeholder="Keywords">
+							<button type="submit">Search <i class="fas fa-search"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- end search area -->

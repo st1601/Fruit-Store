@@ -1,3 +1,5 @@
+import { Product, ProductService } from './../../service/product.service';
+import {CategoryService, Category} from './../../service/category.service';
 import { Component, OnInit } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
 
@@ -7,9 +9,18 @@ import { NgxSpinnerService } from 'ngx-spinner';
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent implements OnInit {
-  constructor() {}
+  categories: Category[] = [];
+  products: Product[] = [];
+  constructor(private productService: ProductService,private categoryService: CategoryService) {}
   // private spinner: NgxSpinnerService
-  ngOnInit() {
+  ngOnInit(): void {
+    this.productService.getAllProduct().subscribe((res: Product[]) => {
+      this.products = res;
+    });
+    this.categoryService.getAllCategory().subscribe((res: Category[]) => {
+      this.categories = res;
+    });
+
     /** spinner starts on init */
     // this.spinner.show();
     // setTimeout(() => {

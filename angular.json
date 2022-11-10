@@ -30,8 +30,10 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
-            "scripts": []
+            "styles": ["src/styles.scss","src/assets/css/meanmenu.min.css"],
+                      
+            "scripts": ["src/assets/js/jquery.meanmenu.min.js"
+            ]
           },
           "configurations": {
             "production": {
