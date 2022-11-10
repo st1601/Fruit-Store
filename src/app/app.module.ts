@@ -82,6 +82,10 @@ import { NgxSpinnerModule } from 'ngx-spinner';
         component: NewComponent,
       },
       {
+        path: 'checkout',
+        component: CheckoutComponent,
+      },
+      {
         path: 'product/:id',
         component: ProductDetailComponent,
       },

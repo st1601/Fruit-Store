@@ -32,9 +32,7 @@
               id="name"
             />
             <input
-
               class="contact-form mr-10"
-
               type="email"
               placeholder="Email"
               name="email"
@@ -50,7 +48,6 @@
               id="phone"
             />
             <input
-
               class="contact-form mr-10"
               type="text"
               placeholder="Subject"
@@ -68,8 +65,9 @@
               placeholder="Message"
             ></textarea>
           </p>
-          <input type="hidden" name="token" value="FsWga4&@f6aw" />
-          <p><input type="submit" value="Submit" /></p>
+          <button type="submit" value="Submit" (click)="onClick()">
+            Submit
+          </button>
         </form>
       </div>
     </div>

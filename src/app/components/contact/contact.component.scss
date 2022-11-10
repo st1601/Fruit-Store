@@ -20,7 +20,7 @@ p{
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 7px;
-    
+
 }
 .contact-text h1 {
     font-family:Arial, Helvetica, sans-serif;
@@ -45,7 +45,7 @@ h2{
     border-radius: 5px 5px;
 }
 
-input[type="submit"]{
+button[type="submit"]{
     background-color: #F28123;
     color: #051922;
     font-weight: 700;
@@ -96,10 +96,10 @@ textarea {
         top: 2px;
       }
     }
-  
+
     padding-left: 40px;
     margin-bottom: 30px;
-  
+
     p {
       line-height: 1.8;
       opacity: 0.8;
@@ -142,5 +142,5 @@ form{
     margin: 0 0 1.25rem 0;
 }
 .mr-10{
-    margin-left: 8px;
+    margin-left: 11px;
 }
