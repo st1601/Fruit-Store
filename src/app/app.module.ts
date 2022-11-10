@@ -19,6 +19,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CartComponent } from './components/cart/cart.component';
 import { AboutComponent } from './components/about/about.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
     FormsModule,
     NgbModule,
     HttpClientModule,
+    NgxSpinnerModule,
     RouterModule.forRoot([
       {
         path: '',
