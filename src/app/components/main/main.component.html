@@ -1,7 +1,7 @@
 <!-- Home slide -->
 <ngb-carousel>
   <ng-template ngbSlide>
-    <img src="../../../assets/img/hero-bg.jpg" alt="first slide" style="display: block; width: 100%" />
+    <img src="../../../assets/img/hero-bg.jpg" alt="first slide" class="slider-img" />
     <div class="carousel-caption">
       <div class="single-homepage-slider homepage-bg-1">
         <div class="container">
@@ -27,7 +27,7 @@
   </ng-template>
   <ng-template ngbSlide>
     <div class="picsum-img-wrapper">
-      <img src="../../../assets/img/hero-bg-2.jpg" alt="Random second slide" />
+      <img src="../../../assets/img/hero-bg-2.jpg" alt="Random second slide" class="slider-img" />
     </div>
     <div class="carousel-caption">
       <div class="single-homepage-slider homepage-bg-2">
@@ -53,7 +53,7 @@
     </div>
   </ng-template>
   <ng-template ngbSlide>
-    <img src="../../../assets/img/hero-bg-3.jpg" alt="third slide" style="display: block; width: 100%" />
+    <img src="../../../assets/img/hero-bg-3.jpg" alt="third slide" class="slider-img" />
     <div class="carousel-caption">
       <div class="single-homepage-slider homepage-bg-3">
         <div class="container">
@@ -79,13 +79,13 @@
   </ng-template>
 </ngb-carousel>
 <!-- Support -->
-<div class="list-section pt-80 pb-80">
+<div class="list-section" style="padding-top: 50px; padding-bottom: 50px">
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
         <div class="list-box d-flex align-items-center">
           <div class="list-icon">
-            <i class="bi bi-truck"></i>
+            <i class="bi bi-truck" style="color: orange; font-size: 40px"></i>
           </div>
           <div class="content">
             <h3>Free Shipping</h3>
@@ -96,7 +96,7 @@
       <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
         <div class="list-box d-flex align-items-center">
           <div class="list-icon">
-            <i class="bi bi-telephone"></i>
+            <i class="bi bi-telephone" style="color: orange; font-size: 40px"></i>
           </div>
           <div class="content">
             <h3>24/7 Support</h3>
@@ -107,7 +107,7 @@
       <div class="col-lg-4 col-md-6">
         <div class="list-box d-flex justify-content-start align-items-center">
           <div class="list-icon">
-            <i class="bi bi-arrow-repeat"></i>
+            <i class="bi bi-arrow-repeat" style="color: orange; font-size: 40px"></i>
           </div>
           <div class="content">
             <h3>Refund</h3>
@@ -119,12 +119,12 @@
   </div>
 </div>
 <!-- Product -->
-<div class="product-section mt-150 mb-150">
+<div class="more-products" style="margin-top: 100px">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 offset-lg-2 text-center">
         <div class="section-title">
-          <h3><span class="orange-text">Our</span> Products</h3>
+          <h3><span style="color: orange">Our</span> Products</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
             fuga quas itaque eveniet beatae optio.
@@ -132,8 +132,8 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 text-center">
+    <div class="row product-lists" style="margin-top: 100px; margin-bottom: 100px">
+      <div class="col-lg-4 col-md-6 text-center berry">
         <div class="single-product-item">
           <div class="product-image">
             <a href="single-product.html"><img src="assets/img/products/product-img-1.jpg" alt="" /></a>
@@ -144,7 +144,7 @@
             Add to Cart</a>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 text-center">
+      <div class="col-lg-4 col-md-6 text-center berry">
         <div class="single-product-item">
           <div class="product-image">
             <a href="single-product.html"><img src="assets/img/products/product-img-2.jpg" alt="" /></a>
@@ -155,7 +155,7 @@
             Add to Cart</a>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
+      <div class="col-lg-4 col-md-6 text-center lemon">
         <div class="single-product-item">
           <div class="product-image">
             <a href="single-product.html"><img src="assets/img/products/product-img-3.jpg" alt="" /></a>
@@ -170,7 +170,7 @@
   </div>
 </div>
 <!-- Deal -->
-<section class="cart-banner pt-100 pb-100">
+<section class="cart-banner" style="padding-top: 100px; padding-bottom: 100px">
   <div class="container">
     <div class="row clearfix">
       <div class="image-column col-lg-6">
@@ -183,7 +183,7 @@
               </span>
             </div>
           </div>
-          <img src="assets/img/a.jpg" alt="" />
+          <img src="assets/img/a.jpg" alt="" style="width: 100%" />
         </div>
       </div>
       <div class="content-column col-lg-6">
@@ -218,7 +218,7 @@
 </section>
 
 <!-- User -->
-<ngb-carousel class="center client-avater">
+<!-- <ngb-carousel class="center client-avater" style="padding-top: 100px">
   <ng-template ngbSlide>
     <div class="picsum-img-wrapper">
       <img src="../../../assets/Quan.jpg" />
@@ -273,4 +273,150 @@
       </p>
     </div>
   </ng-template>
-</ngb-carousel>
+
+</ngb-carousel> -->
+<!-- About -->
+<div class="abt-section" style="margin-top: 150px; margin-bottom: 150px">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="abt-bg">
+          <a href="https://youtu.be/cIQNea_Jxjg" class="video-play-btn popup-youtube"><i class="fas fa-play"
+              style="color: lightgray; font-size: 40px"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="abt-text">
+          <p class="top-sub">Since Year 1999</p>
+          <h2>We are <span class="orange-text">Fruitkha</span></h2>
+          <p>
+            Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa
+            porttitor vestibulum ac vel nisi. Vestibulum placerat eget dolor sit
+            amet posuere. In ut dolor aliquet, aliquet sapien sed, interdum
+            velit. Nam eu molestie lorem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+            facilis illo repellat veritatis minus, et labore minima mollitia qui
+            ducimus.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Banner -->
+<section class="shop-banner">
+  <div class="container">
+    <h3>
+      December sale is on! <br />
+      with big <span style="color: orange">Discount...</span>
+    </h3>
+    <div class="sale-percent">
+      <span>Sale! <br />Upto</span>
+      <span style="font-size: 50px; color: orange">50%</span>
+      <span>off</span>
+    </div>
+    <a [routerLink]="['/products']" routerLinkActive="active" class="nav-link cart-btn btn-lg">Shop Now</a>
+  </div>
+</section>
+<!-- New -->
+
+<div class="more-products" style="margin-top: 100px">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <div class="section-title">
+
+          <h3><span style="color: orange">Our</span> News</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
+            fuga quas itaque eveniet beatae optio.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="latest-news" style="margin-top: 100px; margin-bottom: 100px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="single-latest-news">
+              <a href="single-news.html">
+                <div class="latest-news-bg news-bg-1"></div>
+              </a>
+              <div class="news-text-box">
+                <h3>
+                  <a href="single-news.html">You will vainly look for fruit on it in autumn.</a>
+                </h3>
+                <p class="blog-meta">
+                  <span class="author"><i class="bi bi-person-circle"></i> Admin</span>
+                  <span class="date"><i class="bi bi-calendar"></i> 27 December, 2019</span>
+                </p>
+                <p class="excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus laborum autem, dolores inventore, beatae nam.
+                </p>
+                <button class="btn btn-primary" style="background-color: orange; border: none">
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-latest-news">
+              <a href="single-news.html">
+                <div class="latest-news-bg news-bg-2"></div>
+              </a>
+              <div class="news-text-box">
+                <h3>
+                  <a href="single-news.html">A man's worth has its season, like tomato.</a>
+                </h3>
+                <p class="blog-meta">
+                  <span class="author"><i class="bi bi-person-circle"></i> Admin</span>
+                  <span class="date"><i class="bi bi-calendar"></i> 27 December, 2019</span>
+                </p>
+                <p class="excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus laborum autem, dolores inventore, beatae nam.
+                </p>
+                <button class="btn btn-primary" style="background-color: orange; border: none">
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-latest-news">
+              <a href="single-news.html">
+                <div class="latest-news-bg news-bg-3"></div>
+              </a>
+              <div class="news-text-box">
+                <h3>
+                  <a href="single-news.html">Good thoughts bear good fresh juicy fruit.</a>
+                </h3>
+                <p class="blog-meta">
+                  <span class="author"><i class="bi bi-person-circle"></i> Admin</span>
+                  <span class="date"><i class="bi bi-calendar"></i> 27 December, 2019</span>
+                </p>
+                <p class="excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus laborum autem, dolores inventore, beatae nam.
+                </p>
+                <button class="btn btn-primary" style="background-color: orange; border: none">
+                  Read more
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -52,20 +52,22 @@
                 >
               </li>
               <li>
-                <div class="header-icons d-inline-block">
-                  <div
-                    class="nav-link shopping-cart"
-                    [routerLink]="['/cart']"
-                    routerLinkActive="active"
-                  >
-                    <i class="bi bi-basket"></i>
-                  </div>
-                  <div class="mobile-hide search-bar-icon" href="#">
-                    <i class="bi bi-search"></i>
-                  </div>
-                </div>
                 <div class="row">
-                  <div class="col">
+                  <div class="header-icons d-inline-block col-3">
+                    <div
+                      class="nav-link shopping-cart"
+                      [routerLink]="['/cart']"
+                      routerLinkActive="active"
+                    >
+                      <i class="bi bi-basket"></i>
+                    </div>
+                  </div>
+                  <div class="header-icons d-inline-block col-3">
+                    <div class="mobile-hide search-bar-icon" href="#">
+                      <i class="bi bi-search"></i>
+                    </div>
+                  </div>
+                  <div class="col-3">
                     <div ngbDropdown class="d-inline-block">
                       <button
                         type="button"
@@ -76,9 +78,26 @@
                         <i class="bi bi-person-circle"></i>
                       </button>
                       <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                        <button ngbDropdownItem>Action - 1</button>
-                        <button ngbDropdownItem>Another Action</button>
-                        <button ngbDropdownItem>Something else is here</button>
+
+                        <button ngbDropdownItem *ngIf="!fruitService.isLogIn()">
+                          <a class="nav-link" [routerLink]="['/login']"
+                            >Login
+                          </a>
+                        </button>
+                        <button ngbDropdownItem *ngIf="!fruitService.isLogIn()">
+                          <a class="nav-link" [routerLink]="['/signup']"
+                            >Signup
+                          </a>
+                        </button>
+                        <button ngbDropdownItem *ngIf="fruitService.isLogIn()">
+                          <a
+                            class="nav-link"
+                            href
+                            (click)="fruitService.logout()"
+                            >Logout
+                          </a>
+                        </button>
+
                       </div>
                     </div>
                   </div>
