@@ -179,6 +179,29 @@
       }
     }
   }
+
+  .content-column {
+    position: relative;
+    padding-top: 40px;
+
+    h3 {
+      font-size: 40px;
+    }
+
+    h4 {
+      position: relative;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+
+    .text {
+      position: relative;
+      font-weight: 400;
+      line-height: 1.8em;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  }
 }
 .client-avater {
   margin-bottom: 20px;
@@ -218,4 +241,125 @@ p.testimonial-body {
   margin: 0 auto;
   width: 200px;
   height: 200px;
+}
+a.video-play-btn {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  line-height: 92px;
+  border-radius: 50%;
+  font-size: 20px;
+  padding-left: 5px;
+  display: block;
+  z-index: 2;
+  top: 50%;
+  margin-top: -45px;
+  box-shadow: 0 0 20px #adadad;
+  left: 50%;
+  margin-left: -45px;
+}
+
+.abt-bg {
+  background-image: url(../../../assets/img/abt.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: 0.3;
+  }
+}
+
+.abt-section .abt-text {
+  padding: 50px;
+  padding-left: 30px;
+}
+
+.abt-text p {
+  &.top-sub {
+    opacity: 0.8;
+    margin-bottom: 10px;
+  }
+
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.shop-banner {
+  position: relative;
+  background-color: #f5f5f5;
+  background-image: url(../../../assets/img/1.jpg);
+  background-size: cover;
+  padding: 110px 0px 115px;
+
+  h3 {
+    position: relative;
+    font-size: 50px;
+    line-height: 1.2em;
+    margin-bottom: 0px;
+  }
+
+  .sale-percent {
+    position: relative;
+    font-size: 60px;
+    font-weight: 700;
+
+    span {
+      position: relative;
+      font-size: 24px;
+      line-height: 1.1em;
+      font-weight: 400;
+      text-align: center;
+      margin-right: 10px;
+      display: inline-block;
+    }
+  }
+}
+.latest-news-bg {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  background-color: #ddd;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.single-latest-news h3 {
+  font-size: 20px;
+  line-height: 1.25em;
+  font-weight: 600;
+}
+.latest-news a.boxed-btn {
+  margin-top: 80px;
+}
+.single-latest-news {
+  margin-bottom: 30px;
+}
+.news-bg-1 {
+  background-image: url(../../../assets/img/latest-news/news-bg-1.jpg);
+}
+
+.news-bg-2 {
+  background-image: url(../../../assets/img/latest-news/news-bg-2.jpg);
+}
+
+.news-bg-3 {
+  background-image: url(../../../assets/img/latest-news/news-bg-3.jpg);
 }
