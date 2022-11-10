@@ -1,4 +1,21 @@
-<form class="w-50 border p-4 mx-auto rounded mt-5">
+<!-- breadcrumb-section -->
+<div class="breadcrumb-section breadcrumb-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <div class="breadcrumb-text">
+          <p>Fruits for everyone</p>
+          <h1>Login</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end breadcrumb section -->
+<form
+  class="w-50 border p-4 mx-auto rounded login"
+  style="margin-top: 50px; margin-bottom: 150px"
+>
   <h2 class="text-center">Login</h2>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
@@ -24,7 +41,12 @@
   <div *ngIf="isInvalid" class="alert alert-danger" role="alert">
     Invalid Email or Password!
   </div>
-  <button type="submit" (click)="login()" class="btn btn-primary">
+  <button
+    type="submit"
+    (click)="login()"
+    class="btn btn-primary"
+    style="background-color: orange; border: none"
+  >
     Submit
   </button>
 </form>
