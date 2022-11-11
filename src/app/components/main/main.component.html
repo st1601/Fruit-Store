@@ -178,43 +178,23 @@
       class="row product-lists"
       style="margin-top: 100px; margin-bottom: 100px"
     >
-      <div class="col-lg-4 col-md-6 text-center berry">
+      <div
+        class="col-lg-4 col-md-6 text-center berry"
+        *ngFor="let product of shot(products)"
+      >
         <div class="single-product-item">
           <div class="product-image">
-            <a href="single-product.html"
-              ><img src="assets/img/products/product-img-1.jpg" alt=""
+            <a [routerLink]="['/product', product.id]"
+              ><img
+                style="width: 243px; height: 243px"
+                [src]="product?.image"
+                alt=""
             /></a>
           </div>
-          <h3>Strawberry</h3>
-          <p class="product-price"><span>Per Kg</span> 85$</p>
-          <a [routerLink]="['/cart']" routerLinkActive="active" class="cart-btn"
-            ><i class="fas fa-shopping-cart"></i> Add to Cart</a
-          >
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 text-center berry">
-        <div class="single-product-item">
-          <div class="product-image">
-            <a href="single-product.html"
-              ><img src="assets/img/products/product-img-2.jpg" alt=""
-            /></a>
-          </div>
-          <h3>Berry</h3>
-          <p class="product-price"><span>Per Kg</span> 70$</p>
-          <a [routerLink]="['/cart']" routerLinkActive="active" class="cart-btn"
-            ><i class="fas fa-shopping-cart"></i> Add to Cart</a
-          >
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 text-center lemon">
-        <div class="single-product-item">
-          <div class="product-image">
-            <a href="single-product.html"
-              ><img src="assets/img/products/product-img-3.jpg" alt=""
-            /></a>
-          </div>
-          <h3>Lemon</h3>
-          <p class="product-price"><span>Per Kg</span> 35$</p>
+          <h3>{{ product?.name }}</h3>
+          <p class="product-price">
+            <span>{{ product?.description }}</span> {{ product?.price }}$
+          </p>
           <a [routerLink]="['/cart']" routerLinkActive="active" class="cart-btn"
             ><i class="fas fa-shopping-cart"></i> Add to Cart</a
           >

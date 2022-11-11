@@ -1,5 +1,5 @@
 import { Product, ProductService } from './../../service/product.service';
-import {CategoryService, Category} from './../../service/category.service';
+import { CategoryService, Category } from './../../service/category.service';
 import { Component, OnInit } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
 
@@ -11,7 +11,10 @@ import { NgxSpinnerService } from 'ngx-spinner';
 export class MainComponent implements OnInit {
   categories: Category[] = [];
   products: Product[] = [];
-  constructor(private productService: ProductService,private categoryService: CategoryService) {}
+  constructor(
+    private productService: ProductService,
+    private categoryService: CategoryService
+  ) {}
   // private spinner: NgxSpinnerService
   ngOnInit(): void {
     this.productService.getAllProduct().subscribe((res: Product[]) => {
@@ -28,4 +31,7 @@ export class MainComponent implements OnInit {
     //   this.spinner.hide();
     // }, 1000);
   }
+  shot = (product: Product[]): Product[] => {
+    return product.slice(0, 3);
+  };
 }

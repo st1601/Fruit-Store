@@ -87,7 +87,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
         component: CheckoutComponent,
       },
       {
-        path: 'product-detail',
+        path: 'product/:id',
         component: ProductDetailComponent,
       },
     ]),
