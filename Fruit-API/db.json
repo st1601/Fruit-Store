@@ -1,0 +1,48 @@
+{
+    "product":[
+        {"id":1, "name":"buoi","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"VietnamFruit","price":5000,"image":"assets/img/VietnamFruit/buoi.jpg"},
+        {"id":2, "name":"cam","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"VietnamFruit","price":6000,"image":"assets/img/VietnamFruit/cam.jpg"},
+        {"id":3, "name":"dao","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"VietnamFruit","price":7000,"image":"assets/img/VietnamFruit/dao.jpg"},
+        {"id":4, "name":"dua","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"VietnamFruit","price":8000,"image":"assets/img/VietnamFruit/dua.jpg"},
+        {"id":5, "name":"mang","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"VietnamFruit","price":9000,"image":"assets/img/VietnamFruit/mang.jpg"},
+
+        {"id":6, "name":"chom","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"ExportFruit","price":5000,"image":"assets/img/ExportFruit/chom.jpg"},
+        {"id":7, "name":"nhan-long","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"ExportFruit","price":6000,"image":"assets/img/ExportFruit/nhan-long.jpg"},
+        {"id":8, "name":"thanh-long","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"ExportFruit","price":7000,"image":"assets/img/ExportFruit/thanh-long.jpg"},
+        {"id":9, "name":"vai-thieu","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"ExportFruit","price":8000,"image":"assets/img/ExportFruit/vai-thieu.jpg"},
+        {"id":10, "name":"vu-sua","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"ExportFruit","price":9000,"image":"assets/img/ExportFruit/vu-sua.jpg"},
+
+
+        {"id":11, "name":"cha-la","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"DriedFruit","price":5000,"image":"assets/img/DriedFruit/cha-la.jpg"},
+        {"id":12, "name":"chuoi-say","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"DriedFruit","price":6000,"image":"assets/img/DriedFruit/chuoi-say.jpg"},
+        {"id":13, "name":"mit-say","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"DriedFruit","price":7000,"image":"assets/img/DriedFruit/mit-say.jpg"},
+        {"id":14, "name":"nho-kho","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"DriedFruit","price":8000,"image":"assets/img/DriedFruit/nho-kho.jpg"},
+        {"id":15, "name":"tao-kho","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"DriedFruit","price":9000,"image":"assets/img/DriedFruit/tao-kho.jpg"},
+
+        {"id":17, "name":"dau","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"ImportedFruit","price":6000,"image":"assets/img/ImportedFruit/dau.jpg"},
+        {"id":18, "name":"kiwi","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"ImportedFruit","price":7000,"image":"assets/img/ImportedFruit/kiwi.jpg"},
+        {"id":19, "name":"nho","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"ImportedFruit","price":8000,"image":"assets/img/ImportedFruit/nho.jpg"},
+        {"id":20, "name":"viet","description":"per kg","moreDes":" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum. ","category":"ImportedFruit","price":9000,"image":"assets/img/ImportedFruit/viet.jpg"}
+
+    ],
+    "category":[
+        {"id":1, "name":"Vietnam Fruit","description":"Description Vietnam Fruit","image":"a"},
+        {"id":2, "name":"Export fruit","description":"Description Export Fruit","image":"a"},
+        {"id":3, "name":"Imported fruit","description":"Description Imported Fruit","image":"a"},
+        {"id":4, "name":"Dried fruit","description":"Description Dried Fruit","image":"a"}
+
+    ],
+    "admin":[
+        {"id":1, "name":"Minh","description":"per kg","image":"","username":"adminhtn21","password":"123456"},
+        {"id":2, "name":"Quan","description":"per kg","image":"","username":"adquanns","password":"123456"},
+        {"id":3, "name":"Son","description":"per kg","image":"","username":"adsonndh","password":"123456"},
+        {"id":4, "name":"Duong","description":"per kg","image":"","username":"adduongdt24","password":"123456"}
+    ],
+    "customer":[
+        {"id":1, "name":"Minh","description":"per kg","image":"","username":"minhtn21","password":"123456"},
+        {"id":2, "name":"Quan","description":"per kg","image":"","username":"quanns","password":"123456"},
+        {"id":3, "name":"Son","description":"per kg","image":"","username":"sonndh","password":"123456"},
+        {"id":4, "name":"Duong","description":"per kg","image":"","username":"duongdt24","password":"123456"}
+    ]
+
+}
